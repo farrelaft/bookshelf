@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input, button {
+    font-family: Raleway;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+.head_bar {
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(17, 92, 206);
+    color: white;
+    font-weight: bold;
+    font-size:30px
+}
+
+header img {
+    width:100px;
+}
+
+
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    margin: 16px;
+    background: #F8F9FA;
+    padding: 16px;
+    flex-grow: 1;
+    height: fit-content;
+}
+
+.input_section > h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.input_section > form > .input {
+    margin: 8px 0;
+}
+
+.input_section > form > button {
+    background-color: rgb(17, 92, 206);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.input_section > form > button:hover{
+    background-color: rgb(17, 92, 206);
+}
+
+.input_section > form > .input > input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    background: #f1f8ff;
+    border: 2px solid rgb(17, 92, 206);
+}
+
+.input_section > form > .input > label {
+    margin-bottom: 4px;
+    font-size: 18;
+    font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    color: black;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.input_section > form > .input_inline > input {
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+}
+
+.shadow {
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+.search_section {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    margin: 16px;
+    background: #F8F9FA;
+    padding: 16px;
+    flex-grow: 1;
+    height: fit-content;
+}
+
+.search_section > h2 {
+    color: rgb(0, 0, 0);
+}
+
+.search_section > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+}
+
+.search_section > form > label {
+    display: flex;
+    align-items: center;
+}
+
+.search_section > form > input {
+    padding: 5px;
+    border-radius: 8px;
+    background: #f1f8ff;
+    border: 2px solid rgb(17, 92, 206);
+}
+
+.search_section > form > button {
+    background-color: rgb(17, 92, 206);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf {
+    border-radius: 8px;
+    margin: 16px;
+    background: #F8F9FA;
+    padding: 16px;
+    flex-grow: 1;
+    height: fit-content;
+}
+
+.book_shelf > h2 {
+    color: black;
+    text-align: center;
+}
+
+.book_shelf > .book_list {
+    padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    border-radius: 5px;
+    margin: 10px 0;
+    border-radius: 16px;
+    background: white;
+}
+
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.book_shelf > .book_list > .book_item > button:hover{
+    box-shadow: 3px 3px 3px 3px #e2e2e2, 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+.book_shelf > .book_list > .book_item > .green {
+    background-color: rgb(17, 92, 206);
+    color: white;
+}
+
+.book_shelf > .book_list > .book_item > .red {
+    background-color: rgb(0, 28, 70);
+    color: white;
+}
+
+.book_shelf > .book_list > .book_item > .blue {
+    background-color: rgb(9, 67, 155);
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    .head_bar {
+        font-size:20px
+    }
+}
